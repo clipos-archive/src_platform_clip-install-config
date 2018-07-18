@@ -1,0 +1,2 @@
+deb copy:///mnt/cdrom/mirrors/clip4-rm-dpkg/rm/rm-core-conf rm main
+deb copy:///mnt/cdrom/mirrors/clip4-rm-dpkg/rm/rm-apps-conf rm main

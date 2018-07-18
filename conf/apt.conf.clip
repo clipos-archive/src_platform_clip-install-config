@@ -1,0 +1,4 @@
+Dir::Etc::SourceList "/usr/share/clip-install-config/sources.list.clip";
+Dir::Cache "/tmp/clip-install-cache/clip/apt/";
+Dir::State "/tmp/clip-install-cache/clip/apt/"; 
+Dir::State::Status "/tmp/clip-install-cache/clip/dpkg/status";

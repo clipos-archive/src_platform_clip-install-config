@@ -1,0 +1,109 @@
+# CLIP ChangeLog for clip-dev/clip-install-config
+
+*clip-install-config-1.2.4 (23 Feb 2016)
+
+  23 Feb 2016; ANSSI <clipos@ssi.gouv.fr>
+  +clip-install-config-1.2.4.ebuild, -clip-install-config-1.2.3.ebuild:
+  Migrate from clip-tiny to clip-bare.
+
+*clip-install-config-1.2.3 (26 Oct 2012)
+
+  26 Oct 2012; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.2.3.ebuild, -clip-install-config-1.2.2.ebuild:
+  Fix usbkeys.conf:R{O,W}_LEVELS format.
+
+*clip-install-config-1.2.2 (03 Oct 2012)
+
+  03 Oct 2012; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.2.2.ebuild, -clip-install-config-1.2.1.ebuild:
+  Fix package list scroll bar visibility.
+
+*clip-install-config-1.2.1 (09 Aug 2012)
+
+  09 Aug 2012; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.2.1.ebuild, -clip-install-config-1.2.0.ebuild:
+  Use list_optional.pl from clip-config-2.3.9+ instead of our own custom
+  copy.
+
+*clip-install-config-1.2.0 (16 Jul 2012)
+
+  16 Jul 2012; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.2.0.ebuild, -clip-install-config-1.1.9.ebuild:
+  Fix outdated defaults for config options.
+  Update net-const configuration to reflect changes in internal addresses
+  (no configurable address for RM_B/USER, dynamic addresses for other jails).
+  Update optional package configuration to display categories.
+  Support switching to a new configuration base directory on the fly.
+
+*clip-install-config-1.1.9 (28 Dec 2011)
+
+  28 Dec 2011; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.9.ebuild, -clip-install-config-1.1.8.ebuild:
+  Support new dynamic device attribution.
+
+*clip-install-config-1.1.8 (14 Nov 2011)
+
+  14 Nov 2011; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.8.ebuild, -clip-install-config-1.1.7.ebuild:
+  Add quotes for usbkeys.conf variables.
+
+*clip-install-config-1.1.7 (22 Aug 2011)
+
+  22 Aug 2011; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.7.ebuild, -clip-install-config-1.1.6.ebuild:
+  Fix bug in user add/modify dialog that would zero out all RM 
+  partition sizes on user accounts created for single jail CLIP
+  configurations.
+
+  06 Jul 2011; Mickaël Salaün <clipos@ssi.gouv.fr>
+  clip-install-config-1.1.6.ebuild:
+  Dependency update: CLIP-Pkg-Base.
+
+*clip-install-config-1.1.6 (21 Jun 2011)
+
+  21 Jun 2011; Mickaël Salaün <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.6.ebuild, -clip-install-config-1.1.5.ebuild:
+  Refactoring the detection of configuration packages.
+
+*clip-install-config-1.1.5 (10 May 2011)
+
+  10 May 2011; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.5.ebuild, -clip-install-config-1.1.4.ebuild:
+  Add proper management of ADMIN_IF params.
+
+*clip-install-config-1.1.4 (27 Oct 2010)
+
+  27 Oct 2010; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.4.ebuild, -clip-install-config-1.1.3.ebuild:
+  Fix gateway net config tab on client configs.
+
+*clip-install-config-1.1.3 (07 Oct 2010)
+
+  07 Oct 2010; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.3.ebuild, -clip-install-config-1.1.2.ebuild:
+  Add Gateway Net config tab.
+
+*clip-install-config-1.1.2 (17 Sep 2010)
+
+  17 Sep 2010; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.2.ebuild, -clip-install-config-1.1.1.ebuild:
+  Add sources.list configuration tab.
+
+*clip-install-config-1.1.1 (09 Sep 2010)
+
+  09 Sep 2010; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.1.ebuild, -clip-install-config-1.1.0.ebuild:
+  Fix RM_H / RM_B inversion in network config. Add possibility to override
+  the default mirror location.
+
+*clip-install-config-1.1.0 (07 Sep 2010)
+
+  07 Sep 2010; Vincent Strubel <clipos@ssi.gouv.fr>
+  +clip-install-config-1.1.0.ebuild, -clip-install-config-1.0.0.ebuild:
+  Add support for user configuration.
+
+*clip-install-config-1.0.0 (01 Sep 2010)
+
+  01 Sep 2010; Vincent Strubel <clipos@ssi.gouv.fr>
+  clip-install-config-1.0.0.ebuild:
+  Initial import.

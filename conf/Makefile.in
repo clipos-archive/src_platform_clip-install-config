@@ -1,0 +1,46 @@
+################# configure part ##############################
+
+srcdir = @srcdir@
+SHELL = @SHELL@
+PREFIX = @prefix@
+prefix = @prefix@
+datadir = @datadir@
+datarootdir = @datarootdir@
+
+CONFFILES := apt.conf.clip apt.conf.clip-gtw apt.conf.rm \
+		sources.list.clip sources.list.clip-gtw sources.list.rm sources.list.clip-bare
+
+################# configure part ##############################
+ifndef VERBOSE
+MAKEFLAGS += -s --no-print-directory
+ECHO = echo
+else 
+ECHO = echo > /dev/null
+endif
+
+.PHONY: all 
+
+all: build
+
+###############################################################
+.PHONY: build clean mrproper maintainer-clean
+
+build: 
+
+install: build
+	list='$(CONFFILES)'; for f in $$list; do \
+		${ECHO} "        INST              ${DESTDIR}${datarootdir}/${PACKAGE}/$$f" ;\
+		install -D $$f ${DESTDIR}${datarootdir}/${PACKAGE}/$$f ;\
+	done
+
+uninstall: 
+	list='$(CONFFILES)'; for f in $$list; do \
+		${ECHO} "        RM                ${DESTDIR}${datarootdir}/${PACKAGE}/$$f" ;\
+		rm -f ${DESTDIR}${datarootdir}/${PACKAGE}/$$f ;\
+	done
+
+clean:
+
+mrproper: clean
+	rm -f Makefile
+
